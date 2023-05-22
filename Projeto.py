@@ -188,15 +188,23 @@ while rotaNaoConfirmada:
         print("\n\nQual a cidade de saída do produto?")
         print("\n\t1) Limeira \n\t2) Mogi Mirim \n\t3) Paulinia \n\t4) Capivari \n\t5) Jaguariúna \n\t6) Campinas \n\t7) Indaiatuba \n\t8) Jundiai \n\t9) Itatiba \n\t9) Serra Negra \n\t10) Bragança Paulista \n\t11) Atibaia \n\t12) São Paulo \n\t13) Guarulhos \n\t14) São José dos Campos \n\t15) Taubaté \n\t16) Santo Antônio do Pinhal \n\t17) Campos do Jordão \n\t18) Paraisópolis \n\t19) Camanducaia")
         
-        saida = int(input("\nCidade de saída: "))
+        try:
+            saida = int(input("\nCidade de saída: "))
+            
+        
 
-        if (saida <= 0 or saida > 19):
-            print("\t\t __________________________________________")
-            print("\n\t\t| ATENÇÃO: Opção inválida. Tente novamente |")
-            print("\t\t __________________________________________")
-            cidadeInexistente = True
-        else:
-            cidadeInexistente = False
+            if (saida <= 0 or saida > 19):
+                print("\t\t __________________________________________")
+                print("\n\t\t| ATENÇÃO: Opção inválida. Tente novamente |")
+                print("\t\t __________________________________________")
+                cidadeInexistente = True
+            else:
+                cidadeInexistente = False
+        
+        except ValueError:
+            print("\t\t ________________________________________")
+            print("\n\t\t| ATENÇÃO: Digite apenas números inteiros |")
+            print("\t\t ________________________________________")
 
     if (saida == 1):
         saida = "Limeira"
@@ -244,15 +252,21 @@ while rotaNaoConfirmada:
         print("\n\nQual a cidade de entrega do produto?")
         print("\n\t1) Limeira \n\t2) Mogi Mirim \n\t3) Paulinia \n\t4) Capivari \n\t5) Jaguariúna \n\t6) Campinas \n\t7) Indaiatuba \n\t8) Jundiai \n\t9) Itatiba \n\t10) Serra Negra \n\t11) Bragança Paulista \n\t12) Atibaia \n\t13) São Paulo \n\t14) Guarulhos \n\t15) São José dos Campos \n\t16) Taubaté \n\t17) Santo Antônio do Pinhal \n\t18) Campos do Jordão \n\t19) Paraisópolis \n\t20) Camanducaia")
 
-        entrega = int(input("\nCidade de entrega: "))
+        try:
+            entrega = int(input("\nCidade de entrega: "))
 
-        if (entrega <= 0 or entrega > 20):
-            print("\t\t __________________________________________")
-            print("\n\t\t| ATENÇÃO: Opção inválida. Tente novamente |")
-            print("\t\t __________________________________________")
-            cidadeInexistente = True
-        else:
-            cidadeInexistente = False
+            if (entrega <= 0 or entrega > 20):
+                print("\t\t __________________________________________")
+                print("\n\t\t| ATENÇÃO: Opção inválida. Tente novamente |")
+                print("\t\t __________________________________________")
+                cidadeInexistente = True
+            else:
+                cidadeInexistente = False
+
+        except ValueError:
+            print("\t\t ________________________________________")
+            print("\n\t\t| ATENÇÃO: Digite apenas números inteiros |")
+            print("\t\t ________________________________________")
 
     if (entrega == 1):
         entrega = "Limeira"
@@ -320,15 +334,21 @@ while opcaoInvalida:
     print("\n\nQual regra você deseja utilizar para defirnir a melhor rota? ")
     print("\n\t1) Menor distância \n\t2) Maior velocidade média \n\t3) Menor tempo \n\t4) Qualidade da via")
 
-    regra = int(input("\nRegra:  "))
+    try:
+        regra = int(input("\nRegra:  "))
 
-    if (regra <= 0 or regra > 4 ):
-        print("\t\t __________________________________________")
-        print("\n\t\t| ATENÇÃO: Opção inválida. Tente novamente |")
-        print("\t\t __________________________________________")
-        opcaoInvalida = True
-    else:
-        opcaoInvalida = False
+        if (regra <= 0 or regra > 4 ):
+            print("\t\t __________________________________________")
+            print("\n\t\t| ATENÇÃO: Opção inválida. Tente novamente |")
+            print("\t\t __________________________________________")
+            opcaoInvalida = True
+        else:
+            opcaoInvalida = False
+
+    except ValueError:
+            print("\t\t ________________________________________")
+            print("\n\t\t| ATENÇÃO: Digite apenas números inteiros |")
+            print("\t\t ________________________________________")
 
 if (regra == 1):
     menorDistancia()
