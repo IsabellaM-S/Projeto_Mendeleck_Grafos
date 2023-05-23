@@ -1,167 +1,198 @@
 grafo = {
-    'limeira' : {
+    'Limeira' : {
         'vizinhos': {
-            'mogi mirim': {'distancia': 52, 'velocidadeMax': 68.42, 'tempo': 0.76, 'qualidadeVia': 6},
-            'paulinia': {'distancia': 51, 'velocidadeMax': 75, 'tempo': 0.68, 'qualidadeVia': 4},
-            'capivari': {'distancia': 68, 'velocidadeMax': 73.11, 'tempo': 0.93, 'qualidadeVia': 10}
+            'Mogi Mirim': {'distancia': 52, 'velocidadeMax': 68.42, 'tempo': 0.76, 'qualidadeVia': 6},
+            'Paulinia': {'distancia': 51, 'velocidadeMax': 75, 'tempo': 0.68, 'qualidadeVia': 4},
+            'Capivari': {'distancia': 68, 'velocidadeMax': 73.11, 'tempo': 0.93, 'qualidadeVia': 10}
         }
     },
     
-    'mogi mirim' : {
+    'Mogi Mirim' : {
         'vizinhos': {
-            'limeira': {'distancia': 52, 'velocidadeMax': 68.42, 'tempo': 0.76, 'qualidadeVia': 6},
-            'jaguariuna': {'distancia': 39, 'velocidadeMax': 78, 'tempo': 0.5, 'qualidadeVia': 8},
-            'serra Negra': {'distancia': 55, 'velocidadeMax': 67.90, 'tempo': 0.81, 'qualidadeVia': 6},
+            'Limeira': {'distancia': 52, 'velocidadeMax': 68.42, 'tempo': 0.76, 'qualidadeVia': 6},
+            'Jaguariuna': {'distancia': 39, 'velocidadeMax': 78, 'tempo': 0.5, 'qualidadeVia': 8},
+            'Serra Negra': {'distancia': 55, 'velocidadeMax': 67.90, 'tempo': 0.81, 'qualidadeVia': 6},
         }
     },
     
-    'paulinia' : {
+    'Paulinia' : {
         'vizinhos': {
-            'limeira': {'distancia': 51, 'velocidadeMax': 75, 'tempo': 0.68, 'qualidadeVia': 4},
-            'campinas': {'distancia': 21, 'velocidadeMax': 45.65, 'tempo': 0.46, 'qualidadeVia': 8}
+            'Limeira': {'distancia': 51, 'velocidadeMax': 75, 'tempo': 0.68, 'qualidadeVia': 4},
+            'Campinas': {'distancia': 21, 'velocidadeMax': 45.65, 'tempo': 0.46, 'qualidadeVia': 8}
         }
     },
     
-    'capivari' : {
+    'Capivari' : {
         'vizinhos': {
-            'limeira': {'distancia': 68, 'velocidadeMax': 73.11, 'tempo': 0.93, 'qualidadeVia': 10},
-            'campinas': {'distancia': 53, 'velocidadeMax': 65.43, 'tempo': 0.81, 'qualidadeVia': 7},
-            'indaiatuba': {'distancia': 32, 'velocidadeMax': 43.83, 'tempo': 0.73, 'qualidadeVia': 7}
+            'Limeira': {'distancia': 68, 'velocidadeMax': 73.11, 'tempo': 0.93, 'qualidadeVia': 10},
+            'Campinas': {'distancia': 53, 'velocidadeMax': 65.43, 'tempo': 0.81, 'qualidadeVia': 7},
+            'Indaiatuba': {'distancia': 32, 'velocidadeMax': 43.83, 'tempo': 0.73, 'qualidadeVia': 7}
         }
     },
     
-    'jaguariuna' : {
+    'Jaguariuna' : {
         'vizinhos': {
-            'mogi mirim': {'distancia': 39, 'velocidadeMax': 78, 'tempo': 0.5, 'qualidadeVia': 8},
-            'campinas': {'distancia': 29, 'velocidadeMax': 81.66, 'tempo': 0.6, 'qualidadeVia': 8}
+            'Mogi Mirim': {'distancia': 39, 'velocidadeMax': 78, 'tempo': 0.5, 'qualidadeVia': 8},
+            'Campinas': {'distancia': 29, 'velocidadeMax': 81.66, 'tempo': 0.6, 'qualidadeVia': 8}
         }
     },
     
-    'campinas' : {
+    'Campinas' : {
         'vizinhos': {
-            'jaguariuna': {'distancia': 29, 'velocidadeMax': 48.33, 'tempo': 0.6, 'qualidadeVia': 8},
-            'paulinia': {'distancia': 21, 'velocidadeMax': 45.65, 'tempo': 0.46, 'qualidadeVia': 8},
-            'capivari': {'distancia': 53, 'velocidadeMax': 65.43, 'tempo': 0.81, 'qualidadeVia': 7},
-            'jundiai': {'distancia': 40, 'velocidadeMax': 66.66, 'tempo': 0.6, 'qualidadeVia': 10},
-            'itatiba': {'distancia': 38, 'velocidadeMax': 63.33, 'tempo': 0.6, 'qualidadeVia': 9}
+            'Jaguariuna': {'distancia': 29, 'velocidadeMax': 48.33, 'tempo': 0.6, 'qualidadeVia': 8},
+            'Paulinia': {'distancia': 21, 'velocidadeMax': 45.65, 'tempo': 0.46, 'qualidadeVia': 8},
+            'Capivari': {'distancia': 53, 'velocidadeMax': 65.43, 'tempo': 0.81, 'qualidadeVia': 7},
+            'Jundiai': {'distancia': 40, 'velocidadeMax': 66.66, 'tempo': 0.6, 'qualidadeVia': 10},
+            'Itatiba': {'distancia': 38, 'velocidadeMax': 63.33, 'tempo': 0.6, 'qualidadeVia': 9}
         }
     },
     
-    'indaiatuba' : {
+    'Indaiatuba' : {
         'vizinhos': {
-            'capivari': {'distancia': 32, 'velocidadeMax': 43.83, 'tempo': 0.73, 'qualidadeVia': 7},
-            'jundiai': {'distancia': 50.9, 'velocidadeMax': 66.9, 'tempo': 0.76 , 'qualidadeVia': 10}
+            'Capivari': {'distancia': 32, 'velocidadeMax': 43.83, 'tempo': 0.73, 'qualidadeVia': 7},
+            'Jundiai': {'distancia': 50.9, 'velocidadeMax': 66.9, 'tempo': 0.76 , 'qualidadeVia': 10}
         }
     },
     
-    'jundiai' : {
+    'Jundiai' : {
         'vizinhos': {
-            'campinas': {'distancia': 40, 'velocidadeMax': 66.66, 'tempo': 0.6, 'qualidadeVia': 10},
-            'indaiatuba': {'distancia': 50.9, 'velocidadeMax': 66.97, 'tempo': 0.76, 'qualidadeVia': 10},
-            'itatiba': {'distancia': 25.3, 'velocidadeMax': 52.70, 'tempo': 0.48 , 'qualidadeVia': 9},
-            'atibaia': {'distancia': 61.9, 'velocidadeMax': 58.39, 'tempo': 1.06, 'qualidadeVia': 8},
-            'sao paulo': {'distancia': 58.8 , 'velocidadeMax': 61.89, 'tempo': 0.95, 'qualidadeVia': 10}
+            'Campinas': {'distancia': 40, 'velocidadeMax': 66.66, 'tempo': 0.6, 'qualidadeVia': 10},
+            'Indaiatuba': {'distancia': 50.9, 'velocidadeMax': 66.97, 'tempo': 0.76, 'qualidadeVia': 10},
+            'Itatiba': {'distancia': 25.3, 'velocidadeMax': 52.70, 'tempo': 0.48 , 'qualidadeVia': 9},
+            'Atibaia': {'distancia': 61.9, 'velocidadeMax': 58.39, 'tempo': 1.06, 'qualidadeVia': 8},
+            'São Paulo': {'distancia': 58.8 , 'velocidadeMax': 61.89, 'tempo': 0.95, 'qualidadeVia': 10}
         }
     },
     
-    'itatiba' : {
+    'Itatiba' : {
         'vizinhos': {
-            'campinas': {'distancia': 38, 'velocidadeMax': 63.33, 'tempo': 0.6, 'qualidadeVia': 9},
-            'jundiai': {'distancia': 25.3, 'velocidadeMax': 52.70, 'tempo': 0.48, 'qualidadeVia': 9},
-            'serra negra': {'distancia': 64.2, 'velocidadeMax': 50.15, 'tempo': 1.28, 'qualidadeVia': 7},
-            'atibaia': {'distancia': 37.3, 'velocidadeMax': 62.16, 'tempo': 0.6, 'qualidadeVia': 8}
+            'Campinas': {'distancia': 38, 'velocidadeMax': 63.33, 'tempo': 0.6, 'qualidadeVia': 9},
+            'Jundiai': {'distancia': 25.3, 'velocidadeMax': 52.70, 'tempo': 0.48, 'qualidadeVia': 9},
+            'Serra Negra': {'distancia': 64.2, 'velocidadeMax': 50.15, 'tempo': 1.28, 'qualidadeVia': 7},
+            'Atibaia': {'distancia': 37.3, 'velocidadeMax': 62.16, 'tempo': 0.6, 'qualidadeVia': 8}
         }
     },
     
-    'serra negra' : {
+    'Serra Negra' : {
         'vizinhos': {
-            'mogi mirim': {'distancia': 55, 'velocidadeMax': 67.90, 'tempo': 0.81, 'qualidadeVia': 6},
-            'itatiba': {'distancia': 64.2, 'velocidadeMax': 50.15, 'tempo': 1.28, 'qualidadeVia': 7},
-            'braganca paulista': {'distancia': 63.6, 'velocidadeMax': 52.13, 'tempo': 1.22, 'qualidadeVia': 7}
+            'Mogi Mirim': {'distancia': 55, 'velocidadeMax': 67.90, 'tempo': 0.81, 'qualidadeVia': 6},
+            'Itatiba': {'distancia': 64.2, 'velocidadeMax': 50.15, 'tempo': 1.28, 'qualidadeVia': 7},
+            'Bragança Paulista': {'distancia': 63.6, 'velocidadeMax': 52.13, 'tempo': 1.22, 'qualidadeVia': 7}
         }
     },
     
-    'braganca paulista' : {
+    'Bragança Paulista' : {
         'vizinhos': {
-            'serra negra': {'distancia': 63.6, 'velocidadeMax': 52.13, 'tempo': 1.22, 'qualidadeVia': 7},
-            'atibaia': {'distancia': 25.3, 'velocidadeMax': 47.73, 'tempo': 0.53, 'qualidadeVia': 8},
-            'camanducaia': {'distancia': 57.4, 'velocidadeMax': 63.77, 'tempo': 0.9, 'qualidadeVia': 8}
+            'Serra Negra': {'distancia': 63.6, 'velocidadeMax': 52.13, 'tempo': 1.22, 'qualidadeVia': 7},
+            'Atibaia': {'distancia': 25.3, 'velocidadeMax': 47.73, 'tempo': 0.53, 'qualidadeVia': 8},
+            'Camanducaia': {'distancia': 57.4, 'velocidadeMax': 63.77, 'tempo': 0.9, 'qualidadeVia': 8}
         }
     },
     
-    'atibaia' : {
+    'Atibaia' : {
         'vizinhos': {
-            'itatiba': {'distancia': 37.3, 'velocidadeMax': 62.16, 'tempo': 0.6, 'qualidadeVia': 8},
-            'braganca paulista': {'distancia': 25.3, 'velocidadeMax': 47.73, 'tempo': 0.53, 'qualidadeVia': 8},
-            'jundiai': {'distancia': 61.9, 'velocidadeMax': 103.16, 'tempo': 0.6, 'qualidadeVia': 8},
-            'guarulhos': {'distancia': 52.9, 'velocidadeMax': 51.86, 'tempo': 1.02, 'qualidadeVia': 8},
-            'sao jose dos campos': {'distancia': 90.3, 'velocidadeMax': 78.52, 'tempo': 1.15, 'qualidadeVia': 8}
+            'Itatiba': {'distancia': 37.3, 'velocidadeMax': 62.16, 'tempo': 0.6, 'qualidadeVia': 8},
+            'Bragança Paulista': {'distancia': 25.3, 'velocidadeMax': 47.73, 'tempo': 0.53, 'qualidadeVia': 8},
+            'Jundiai': {'distancia': 61.9, 'velocidadeMax': 103.16, 'tempo': 0.6, 'qualidadeVia': 8},
+            'Guarulhos': {'distancia': 52.9, 'velocidadeMax': 51.86, 'tempo': 1.02, 'qualidadeVia': 8},
+            'São José dos Campos': {'distancia': 90.3, 'velocidadeMax': 78.52, 'tempo': 1.15, 'qualidadeVia': 8}
         }
     },
     
-    'sao paulo' : {
+    'São Paulo' : {
         'vizinhos': {
-            'jundiai': {'distancia': 58.8, 'velocidadeMax': 61.89, 'tempo': 0.95, 'qualidadeVia': 10},
-            'guarulhos': {'distancia': 22.0, 'velocidadeMax': 33.33, 'tempo': 0.66, 'qualidadeVia': 10}
+            'Jundiai': {'distancia': 58.8, 'velocidadeMax': 61.89, 'tempo': 0.95, 'qualidadeVia': 10},
+            'Guarulhos': {'distancia': 22.0, 'velocidadeMax': 33.33, 'tempo': 0.66, 'qualidadeVia': 10}
         }
     },
     
-    'guarulhos' : {
+    'Guarulhos' : {
         'vizinhos': {
-            'sao paulo': {'distancia': 22.0, 'velocidadeMax': 33.33, 'tempo': 0.66, 'qualidadeVia': 10},
-            'atibaia': {'distancia': 52.9, 'velocidadeMax': 51.86, 'tempo': 1.02, 'qualidadeVia': 8},
-            'sao jose dos campos': {'distancia': 75.2, 'velocidadeMax': 69.62, 'tempo': 1.08, 'qualidadeVia': 9}
+            'São Paulo': {'distancia': 22.0, 'velocidadeMax': 33.33, 'tempo': 0.66, 'qualidadeVia': 10},
+            'Atibaia': {'distancia': 52.9, 'velocidadeMax': 51.86, 'tempo': 1.02, 'qualidadeVia': 8},
+            'São José dos Campos': {'distancia': 75.2, 'velocidadeMax': 69.62, 'tempo': 1.08, 'qualidadeVia': 9}
         }
     },
     
-    'sao jose dos campos' : {
+    'São José dos Campos' : {
         'vizinhos': {
-            'guarulhos': {'distancia': 75.2, 'velocidadeMax': 69.62, 'tempo': 1.08, 'qualidadeVia': 9},
-            'atibaia': {'distancia': 90.3, 'velocidadeMax': 78.54, 'tempo': 1.15, 'qualidadeVia': 8},
-            'taubate': {'distancia': 42.2, 'velocidadeMax': 64.92, 'tempo': 0.65, 'qualidadeVia': 10},
-            'paraisopolis': {'distancia': 119.2, 'velocidadeMax': 60.81, 'tempo': 1.96, 'qualidadeVia': 7}
+            'Guarulhos': {'distancia': 75.2, 'velocidadeMax': 69.62, 'tempo': 1.08, 'qualidadeVia': 9},
+            'Atibaia': {'distancia': 90.3, 'velocidadeMax': 78.54, 'tempo': 1.15, 'qualidadeVia': 8},
+            'Taubaté': {'distancia': 42.2, 'velocidadeMax': 64.92, 'tempo': 0.65, 'qualidadeVia': 10},
+            'Paraisopolis': {'distancia': 119.2, 'velocidadeMax': 60.81, 'tempo': 1.96, 'qualidadeVia': 7}
         }
     },
     
-    'taubate' : {
+    'Taubaté' : {
         'vizinhos': {
-            'sao jose dos campos': {'distancia': 42.2, 'velocidadeMax': 64.92, 'tempo': 0.65, 'qualidadeVia': 10},
-            'santo antonio do pinhal': {'distancia': 35.4, 'velocidadeMax': 44.25, 'tempo': 0.8, 'qualidadeVia': 7}
+            'São José dos Campos': {'distancia': 42.2, 'velocidadeMax': 64.92, 'tempo': 0.65, 'qualidadeVia': 10},
+            'Santo Antônio do Pinhal': {'distancia': 35.4, 'velocidadeMax': 44.25, 'tempo': 0.8, 'qualidadeVia': 7}
         }
     },
     
-    'santo antonio do pinhal' : {
+    'Santo Antônio do Pinhal' : {
         'vizinhos': {
-            'taubate': {'distancia': 35.4, 'velocidadeMax': 44.25, 'tempo': 0.8, 'qualidadeVia': 7},
-            'campos do jordao': {'distancia': 22.2, 'velocidadeMax': 54.14, 'tempo': 0.41, 'qualidadeVia': 7}
+            'Taubaté': {'distancia': 35.4, 'velocidadeMax': 44.25, 'tempo': 0.8, 'qualidadeVia': 7},
+            'Campos do Jordão': {'distancia': 22.2, 'velocidadeMax': 54.14, 'tempo': 0.41, 'qualidadeVia': 7}
         }
     },
     
-    'campos do jordao' : {
+    'Campos do Jordão' : {
         'vizinhos': {
-            'santo antonio do pinhal': {'distancia': 16.6, 'velocidadeMax': 38.60, 'tempo': 0.43, 'qualidadeVia': 7},
-            'paraisopolis': {'distancia': 49.5, 'velocidadeMax': 46.69, 'tempo': 1.06, 'qualidadeVia': 6}
+            'Santo Antônio do Pinhal': {'distancia': 16.6, 'velocidadeMax': 38.60, 'tempo': 0.43, 'qualidadeVia': 7},
+            'Paraisópolis': {'distancia': 49.5, 'velocidadeMax': 46.69, 'tempo': 1.06, 'qualidadeVia': 6}
         }
     },
     
-    'paraisopolis' : {
+    'Paraisópolis' : {
         'vizinhos': {
-            'campos do jordao': {'distancia': 49.5, 'velocidadeMax': 46.69, 'tempo': 1.06, 'qualidadeVia': 6},
-            'camanducaia': {'distancia': 60.7, 'velocidadeMax': 48.58, 'tempo': 1.25, 'qualidadeVia': 6},
-            'sao jose dos campos': {'distancia': 119.2, 'velocidadeMax': 60.81, 'tempo': 1.96, 'qualidadeVia': 7}
+            'Campos do Jordão': {'distancia': 49.5, 'velocidadeMax': 46.69, 'tempo': 1.06, 'qualidadeVia': 6},
+            'Camanducaia': {'distancia': 60.7, 'velocidadeMax': 48.58, 'tempo': 1.25, 'qualidadeVia': 6},
+            'São José dos Campos': {'distancia': 119.2, 'velocidadeMax': 60.81, 'tempo': 1.96, 'qualidadeVia': 7}
         }
     },
 
-    'camanducaia' : {
+    'Camanducaia' : {
         'vizinhos': {
-            'paraisopolis': {'distancia': 60.7, 'velocidadeMax': 48.56, 'tempo': 1.25, 'qualidadeVia': 6},
-            'braganca paulista': {'distancia': 57.4, 'velocidadeMax': 63.77, 'tempo': 0.9, 'qualidadeVia': 8}
+            'Paraisópolis': {'distancia': 60.7, 'velocidadeMax': 48.56, 'tempo': 1.25, 'qualidadeVia': 6},
+            'Bragança Paulista': {'distancia': 57.4, 'velocidadeMax': 63.77, 'tempo': 0.9, 'qualidadeVia': 8}
         }
     },
 }
 
-def menorDistancia():
-    print("\nFunção para calcular rota com menor distância")
+
+def buscaRotas(grafo, origem, destino, caminhoAtual=[], caminhos=[]):
+    caminhoAtual.append(origem) #adiciona a cidade de partida ao vetor de cidades já vizitadas
+
+    # Verifica se a origem é igual ao destino (se já cheguei na cidade final)
+    if origem == destino:
+        caminhos.append(caminhoAtual[:])  # Adiciona uma cópia do caminho atual aos caminhos encontrados
+
+    #verifica se a cidade de origem está no grafo 
+    if origem in grafo:
+        vizinhos = grafo[origem]['vizinhos'] #guarda na variável 'vizinhos' as cidades vizinhas da cidade de origem
+
+        #percorre todos os vizinhos da cidade origem
+        for vizinho in vizinhos:
+            #para verificar se ele já está no vetor de cidades já vizitadas, para evitar ciclos
+            #se a cidade ainda não for vizitada, percorre toda a função novamente (recursão)
+            if vizinho not in caminhoAtual:
+                buscaRotas(grafo, vizinho, destino, caminhoAtual, caminhos)
+
+    #devemos retirar a cidade atual (a que estamos olhando no for) da lista de cidades vizitadas, para voltar ao nó anterior e explorar todas as possibilidades a partir dele
+    caminhoAtual.pop()
+
+    return caminhos
+
+
+def menorDistancia(grafo, origem, destino):
+    caminhos = buscaRotas(grafo, saida, entrega)
+
+    # Imprime todos os caminhos encontrados
+    for caminho in caminhos:
+        print("\n",caminho)
+
+
 
 def maiorVelocidade():
     print("\nFunção para calcular rota com maior velocidade média")
@@ -193,7 +224,7 @@ while rotaNaoConfirmada:
             
         
 
-            if (saida <= 0 or saida > 19):
+            if (saida <= 0 or saida > 20):
                 print("\t\t __________________________________________")
                 print("\n\t\t| ATENÇÃO: Opção inválida. Tente novamente |")
                 print("\t\t __________________________________________")
@@ -309,25 +340,31 @@ while rotaNaoConfirmada:
     elif (entrega== 20):
         entrega = "Camanducaia"
 
-    print("\n\tRota selecionada: ", saida, " ------> ", entrega)
-
-    digitouErrado = True
-    while digitouErrado:
-        confirmado = input("\n\nConfirmar (S / N)? ").upper()
-
-        if (confirmado == "S" or confirmado == "N"):
-            digitouErrado = False
-        else:
-            print("\t\t ___________________________________________________")
-            print("\n\t\t| ATENÇÃO: Digite apenas 'S' ou 'N'. Tente novamente |")
-            print("\t\t ___________________________________________________")
-            digitouErrado = True
-
-    if (confirmado == "N"):
+    if (saida == entrega):
+        print("\t\t __________________________________________________________")
+        print("\n\t\t| ATENÇÃO: A cidade de saída não pode ser a mesma da entrega |")
+        print("\t\t __________________________________________________________")
         rotaNaoConfirmada = True
-    elif (confirmado == "S"):
-        rotaNaoConfirmada = False
-        
+    else:
+        print("\n\tRota selecionada: ", saida, " ------> ", entrega)
+
+        digitouErrado = True
+        while digitouErrado:
+            confirmado = input("\n\nConfirmar (S / N)? ").upper()
+
+            if (confirmado == "S" or confirmado == "N"):
+                digitouErrado = False
+            else:
+                print("\t\t ___________________________________________________")
+                print("\n\t\t| ATENÇÃO: Digite apenas 'S' ou 'N'. Tente novamente |")
+                print("\t\t ___________________________________________________")
+                digitouErrado = True
+
+        if (confirmado == "N"):
+            rotaNaoConfirmada = True
+        elif (confirmado == "S"):
+            rotaNaoConfirmada = False
+            
 
 opcaoInvalida = True
 while opcaoInvalida:
@@ -351,10 +388,12 @@ while opcaoInvalida:
             print("\t\t ________________________________________")
 
 if (regra == 1):
-    menorDistancia()
+    menorDistancia(grafo, saida, entrega)
 elif (regra == 2):
     maiorVelocidade()
 elif (regra == 3):
     menorTempo()
 elif (regra == 4):
     qualidadeVia()
+
+
