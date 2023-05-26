@@ -162,35 +162,72 @@ grafo = {
 
 
 def buscaRotas(grafo, origem, destino, caminhoAtual=[], caminhos=[]):
-    caminhoAtual.append(origem) #adiciona a cidade de partida ao vetor de cidades já vizitadas
 
-    # Verifica se a origem é igual ao destino (se já cheguei na cidade final)
+    #Essa função está retornando todas as rotas, ainda não conseguimos fazer retornando apenas a mais curta
+    caminhoAtual.append(origem) 
+
     if origem == destino:
-        caminhos.append(caminhoAtual[:])  # Adiciona uma cópia do caminho atual aos caminhos encontrados
+        caminhos.append(caminhoAtual[:])  
 
-    #verifica se a cidade de origem está no grafo 
     if origem in grafo:
-        vizinhos = grafo[origem]['vizinhos'] #guarda na variável 'vizinhos' as cidades vizinhas da cidade de origem
+        vizinhos = grafo[origem]['vizinhos'] 
 
-        #percorre todos os vizinhos da cidade origem
+        
         for vizinho in vizinhos:
-            #para verificar se ele já está no vetor de cidades já vizitadas, para evitar ciclos
-            #se a cidade ainda não for vizitada, percorre toda a função novamente (recursão)
             if vizinho not in caminhoAtual:
                 buscaRotas(grafo, vizinho, destino, caminhoAtual, caminhos)
 
-    #devemos retirar a cidade atual (a que estamos olhando no for) da lista de cidades vizitadas, para voltar ao nó anterior e explorar todas as possibilidades a partir dele
     caminhoAtual.pop()
 
-    return caminhos
-
-
-def menorDistancia(grafo, origem, destino):
     caminhos = buscaRotas(grafo, saida, entrega)
 
     # Imprime todos os caminhos encontrados
     for caminho in caminhos:
         print("\n",caminho)
+
+    return caminhos
+
+
+def menorDistancia(grafo, origem, destino):
+    distancias = {cidade: float('inf') for cidade in grafo}
+    distancias[origem] = 0
+    antecessores = {cidade: None for cidade in grafo}
+    visitados = []
+
+    while len(visitados) < len(grafo):
+        cidadeAtual = None
+        menorDistancia = float('inf')
+
+        for cidade, distancia in distancias.items():
+            if cidade not in visitados and distancia < menorDistancia:
+                cidadeAtual = cidade
+                menorDistancia = distancia
+
+        if cidadeAtual == destino:
+            break
+
+        visitados.append(cidadeAtual)
+
+        vizinhos = grafo[cidadeAtual]['vizinhos']
+        for vizinho, dados in vizinhos.items():
+            novaDistancia = distancias[cidadeAtual] + dados['distancia']
+
+            if novaDistancia < distancias[vizinho]:
+                distancias[vizinho] = novaDistancia
+                antecessores[vizinho] = cidadeAtual
+    
+    caminho = []
+    cidade = destino
+    while cidade is not None:
+        caminho.insert(0, cidade)
+        cidade = antecessores[cidade]
+
+    print(f"O caminho mais curto entre {origem} e {destino} é:")
+    print("\n\t[  ", end="")
+    for cidade in caminho:
+        print(cidade, "  ", end="")
+    
+    print("] ", distancias[destino], "Km")
 
 
 
