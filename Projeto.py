@@ -119,7 +119,7 @@ grafo = {
             'Guarulhos': {'distancia': 75.2, 'velocidadeMax': 69.62, 'tempo': 1.08, 'qualidadeVia': 9},
             'Atibaia': {'distancia': 90.3, 'velocidadeMax': 78.54, 'tempo': 1.15, 'qualidadeVia': 8},
             'Taubaté': {'distancia': 42.2, 'velocidadeMax': 64.92, 'tempo': 0.65, 'qualidadeVia': 10},
-            'Paraisopolis': {'distancia': 119.2, 'velocidadeMax': 60.81, 'tempo': 1.96, 'qualidadeVia': 7}
+            'Paraisópolis': {'distancia': 119.2, 'velocidadeMax': 60.81, 'tempo': 1.96, 'qualidadeVia': 7}
         }
     },
     
@@ -272,34 +272,31 @@ def menorTempo(grafo, origem, destino):
     while minutos >= 60:
         contadorHoras += 1
         minutos -= 60
+        minutosArred = int(minutos)
 
     print(f"O caminho com menor tempo de percurso entre {origem} e {destino} é:")
     print("\n\t[  ", end="")
     for cidade in caminho:
         print(cidade, "  ", end="")
     
-    print("] %",contadorHoras, "h",minutos, "min")
+    print("] ",contadorHoras, "h", minutosArred, "min")
 
 
-def maiorVelocidade():
-    print("\nFunção para calcular rota com maior velocidade média")
-
-
-def qualidadeVia(grafo, origem, destino):
-    qualidades = {cidade: float('inf') for cidade in grafo}
-    qualidades[origem] = 0
+def maiorVelocidade(grafo, origem, destino):
+    velocidades = {cidade: -1.0 for cidade in grafo}
+    velocidades[origem] = 0
     antecessores = {cidade: None for cidade in grafo}
     visitados = []
-
+    
     while len(visitados) < len(grafo):
         cidadeAtual = None
-        maiorQualidade = float('inf')
-
-        for cidade, qualidade in qualidades.items():
-            if cidade not in visitados and qualidade < maiorQualidade:
+        maiorVelocidade = -1.0
+        
+        for cidade, velocidade in velocidades.items():
+            if cidade not in visitados and velocidade > maiorVelocidade:
                 cidadeAtual = cidade
-                maiorQualidade = qualidade
-
+                maiorVelocidade = velocidade
+                
         if cidadeAtual == destino:
             break
 
@@ -307,12 +304,52 @@ def qualidadeVia(grafo, origem, destino):
 
         vizinhos = grafo[cidadeAtual]['vizinhos']
         for vizinho, dados in vizinhos.items():
-            novaQualidade = qualidades[cidadeAtual] + dados['qualidadeVia']
+            novaVelocidade = velocidades[cidadeAtual] + dados['velocidadeMax']
 
-            if novaQualidade < qualidades[vizinho]:
-                qualidades[vizinho] = novaQualidade
+            if novaVelocidade > velocidades[vizinho]:
+                velocidades[vizinho] = novaVelocidade
                 antecessores[vizinho] = cidadeAtual
     
+    caminho = []
+    cidade = destino
+    while cidade is not None:
+        caminho.insert(0, cidade)
+        cidade = antecessores[cidade]
+    
+    print(caminho)
+
+    print(f"O caminho com maior velocidade média entre {origem} e {destino} é:")
+    print("\n\t[  ", end="")
+    for cidade in caminho:
+        print(cidade, "  ", end="")
+    
+    print("] ", velocidades[destino], "Km/h")
+
+def qualidadeVia(grafo, origem, destino):
+    qualidades = {cidade:  -1 for cidade in grafo}
+    qualidades[origem] = 0
+    antecessores = {cidade: None for cidade in grafo}
+    visitados = []
+
+    while len(visitados) < len(grafo):
+        cidadeAtual = None
+        maiorQualidade = -1
+
+        for cidade, qualidade in qualidades.items():
+            if qualidade > maiorQualidade and cidade not in visitados:
+                cidadeAtual = cidade
+                maiorQualidade = qualidade
+
+        if cidadeAtual == destino:
+            break
+
+        vizinhos = grafo[cidadeAtual]['vizinhos']
+        for vizinho, dados in vizinhos.items():
+            novaQualidade = qualidades[cidadeAtual] + dados['qualidadeVia']
+            if novaQualidade > qualidades[vizinho]:
+                qualidades[vizinho] = novaQualidade
+                antecessores[vizinho] = cidadeAtual
+
     caminho = []
     cidade = destino
     while cidade is not None:
@@ -323,8 +360,9 @@ def qualidadeVia(grafo, origem, destino):
     print("\n\t[  ", end="")
     for cidade in caminho:
         print(cidade, "  ", end="")
-    
+
     print("] ", qualidades[destino])
+
 
 
 
@@ -513,7 +551,7 @@ while opcaoInvalida:
 if (regra == 1):
     menorDistancia(grafo, saida, entrega)
 elif (regra == 2):
-    maiorVelocidade()
+    maiorVelocidade(grafo, saida, entrega)
 elif (regra == 3):
     menorTempo(grafo, saida, entrega)
 elif (regra == 4):
