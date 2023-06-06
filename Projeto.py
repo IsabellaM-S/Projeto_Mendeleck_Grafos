@@ -1,192 +1,164 @@
 grafo = {
     'Limeira' : {
         'vizinhos': {
-            'Mogi Mirim': {'distancia': 52, 'velocidadeMax': 68.42, 'tempo': 0.76, 'qualidadeVia': 6},
-            'Paulinia': {'distancia': 51, 'velocidadeMax': 75, 'tempo': 0.68, 'qualidadeVia': 4},
-            'Capivari': {'distancia': 68, 'velocidadeMax': 73.11, 'tempo': 0.93, 'qualidadeVia': 10}
+            'Mogi Mirim': {'distancia': 52, 'custoPedagio': 10.90, 'tempo': 0.76, 'qtdPostoPolicial': 0},
+            'Paulinia': {'distancia': 51, 'custoPedagio': 0.0, 'tempo': 0.68, 'qtdPostoPolicial': 0},
+            'Capivari': {'distancia': 68, 'custoPedagio': 0.0, 'tempo': 0.93, 'qtdPostoPolicial': 0}
         }
     },
     
     'Mogi Mirim' : {
         'vizinhos': {
-            'Limeira': {'distancia': 52, 'velocidadeMax': 68.42, 'tempo': 0.76, 'qualidadeVia': 6},
-            'Jaguariuna': {'distancia': 39, 'velocidadeMax': 78, 'tempo': 0.5, 'qualidadeVia': 8},
-            'Serra Negra': {'distancia': 55, 'velocidadeMax': 67.90, 'tempo': 0.81, 'qualidadeVia': 6},
+            'Limeira': {'distancia': 52, 'custoPedagio': 10.90, 'tempo': 0.76, 'qtdPostoPolicial': 0},
+            'Jaguariuna': {'distancia': 39, 'custoPedagio': 0.0, 'tempo': 0.5, 'qtdPostoPolicial': 1},
+            'Serra Negra': {'distancia': 55, 'custoPedagio': 9.60, 'tempo': 0.81, 'qtdPostoPolicial': 0},
         }
     },
     
     'Paulinia' : {
         'vizinhos': {
-            'Limeira': {'distancia': 51, 'velocidadeMax': 75, 'tempo': 0.68, 'qualidadeVia': 4},
-            'Campinas': {'distancia': 21, 'velocidadeMax': 45.65, 'tempo': 0.46, 'qualidadeVia': 8}
+            'Limeira': {'distancia': 51, 'custoPedagio': 0.0, 'tempo': 0.68, 'qtdPostoPolicial': 0},
+            'Campinas': {'distancia': 21, 'custoPedagio': 0.0, 'tempo': 0.46, 'qtdPostoPolicial': 0}
         }
     },
     
     'Capivari' : {
         'vizinhos': {
-            'Limeira': {'distancia': 68, 'velocidadeMax': 73.11, 'tempo': 0.93, 'qualidadeVia': 10},
-            'Campinas': {'distancia': 53, 'velocidadeMax': 65.43, 'tempo': 0.81, 'qualidadeVia': 7},
-            'Indaiatuba': {'distancia': 32, 'velocidadeMax': 43.83, 'tempo': 0.73, 'qualidadeVia': 7}
+            'Limeira': {'distancia': 68, 'custoPedagio': 0.0, 'tempo': 0.93, 'qtdPostoPolicial': 0},
+            'Campinas': {'distancia': 53, 'custoPedagio': 8.90, 'tempo': 0.81, 'qtdPostoPolicial': 1},
+            'Indaiatuba': {'distancia': 32, 'custoPedagio': 8.90, 'tempo': 0.73, 'qtdPostoPolicial': 1}
         }
     },
     
     'Jaguariuna' : {
         'vizinhos': {
-            'Mogi Mirim': {'distancia': 39, 'velocidadeMax': 78, 'tempo': 0.5, 'qualidadeVia': 8},
-            'Campinas': {'distancia': 29, 'velocidadeMax': 81.66, 'tempo': 0.6, 'qualidadeVia': 8}
+            'Mogi Mirim': {'distancia': 39, 'custoPedagio': 0.0, 'tempo': 0.5, 'qtdPostoPolicial': 1},
+            'Campinas': {'distancia': 29, 'custoPedagio': 7.60, 'tempo': 0.6, 'qtdPostoPolicial': 1}
         }
     },
     
     'Campinas' : {
         'vizinhos': {
-            'Jaguariuna': {'distancia': 29, 'velocidadeMax': 48.33, 'tempo': 0.6, 'qualidadeVia': 8},
-            'Paulinia': {'distancia': 21, 'velocidadeMax': 45.65, 'tempo': 0.46, 'qualidadeVia': 8},
-            'Capivari': {'distancia': 53, 'velocidadeMax': 65.43, 'tempo': 0.81, 'qualidadeVia': 7},
-            'Jundiai': {'distancia': 40, 'velocidadeMax': 66.66, 'tempo': 0.6, 'qualidadeVia': 10},
-            'Itatiba': {'distancia': 38, 'velocidadeMax': 63.33, 'tempo': 0.6, 'qualidadeVia': 9}
+            'Jaguariuna': {'distancia': 29, 'custoPedagio': 7.60, 'tempo': 0.6, 'qtdPostoPolicial': 1},
+            'Paulinia': {'distancia': 21, 'custoPedagio': 0.0, 'tempo': 0.46, 'qtdPostoPolicial': 0},
+            'Capivari': {'distancia': 53, 'custoPedagio': 8.90, 'tempo': 0.81, 'qtdPostoPolicial': 1},
+            'Jundiai': {'distancia': 40, 'custoPedagio': 11.70, 'tempo': 0.6, 'qtdPostoPolicial': 0},
+            'Itatiba': {'distancia': 38, 'custoPedagio': 13.50, 'tempo': 0.6, 'qtdPostoPolicial': 0}
         }
     },
     
     'Indaiatuba' : {
         'vizinhos': {
-            'Capivari': {'distancia': 32, 'velocidadeMax': 43.83, 'tempo': 0.73, 'qualidadeVia': 7},
-            'Jundiai': {'distancia': 50.9, 'velocidadeMax': 66.9, 'tempo': 0.76 , 'qualidadeVia': 10}
+            'Capivari': {'distancia': 32, 'custoPedagio': 8.90, 'tempo': 0.73, 'qtdPostoPolicial': 1},
+            'Jundiai': {'distancia': 50.9, 'custoPedagio': 28.50, 'tempo': 0.76 , 'qtdPostoPolicial': 2}
         }
     },
     
     'Jundiai' : {
         'vizinhos': {
-            'Campinas': {'distancia': 40, 'velocidadeMax': 66.66, 'tempo': 0.6, 'qualidadeVia': 10},
-            'Indaiatuba': {'distancia': 50.9, 'velocidadeMax': 66.97, 'tempo': 0.76, 'qualidadeVia': 10},
-            'Itatiba': {'distancia': 25.3, 'velocidadeMax': 52.70, 'tempo': 0.48 , 'qualidadeVia': 9},
-            'Atibaia': {'distancia': 61.9, 'velocidadeMax': 58.39, 'tempo': 1.06, 'qualidadeVia': 8},
-            'São Paulo': {'distancia': 58.8 , 'velocidadeMax': 61.89, 'tempo': 0.95, 'qualidadeVia': 10}
+            'Campinas': {'distancia': 40, 'custoPedagio': 11.70, 'tempo': 0.6, 'qtdPostoPolicial': 0},
+            'Indaiatuba': {'distancia': 50.9, 'custoPedagio': 28.50, 'tempo': 0.76, 'qtdPostoPolicial': 2},
+            'Itatiba': {'distancia': 25.3, 'custoPedagio': 4.50, 'tempo': 0.48 , 'qtdPostoPolicial': 1},
+            'Atibaia': {'distancia': 61.9, 'custoPedagio': 9.30, 'tempo': 1.06, 'qtdPostoPolicial': 2},
+            'São Paulo': {'distancia': 58.8 , 'custoPedagio': 11.80, 'tempo': 0.95, 'qtdPostoPolicial': 3}
         }
     },
     
     'Itatiba' : {
         'vizinhos': {
-            'Campinas': {'distancia': 38, 'velocidadeMax': 63.33, 'tempo': 0.6, 'qualidadeVia': 9},
-            'Jundiai': {'distancia': 25.3, 'velocidadeMax': 52.70, 'tempo': 0.48, 'qualidadeVia': 9},
-            'Serra Negra': {'distancia': 64.2, 'velocidadeMax': 50.15, 'tempo': 1.28, 'qualidadeVia': 7},
-            'Atibaia': {'distancia': 37.3, 'velocidadeMax': 62.16, 'tempo': 0.6, 'qualidadeVia': 8}
+            'Campinas': {'distancia': 38, 'custoPedagio': 13.50, 'tempo': 0.6, 'qtdPostoPolicial': 0},
+            'Jundiai': {'distancia': 25.3, 'custoPedagio': 4.50, 'tempo': 0.48, 'qtdPostoPolicial': 1},
+            'Serra Negra': {'distancia': 64.2, 'custoPedagio': 0.0, 'tempo': 1.28, 'qtdPostoPolicial': 1},
+            'Atibaia': {'distancia': 37.3, 'custoPedagio': 9.30, 'tempo': 0.6, 'qtdPostoPolicial': 1}
         }
     },
     
     'Serra Negra' : {
         'vizinhos': {
-            'Mogi Mirim': {'distancia': 55, 'velocidadeMax': 67.90, 'tempo': 0.81, 'qualidadeVia': 6},
-            'Itatiba': {'distancia': 64.2, 'velocidadeMax': 50.15, 'tempo': 1.28, 'qualidadeVia': 7},
-            'Bragança Paulista': {'distancia': 63.6, 'velocidadeMax': 52.13, 'tempo': 1.22, 'qualidadeVia': 7}
+            'Mogi Mirim': {'distancia': 55, 'custoPedagio': 9.60, 'tempo': 0.81, 'qtdPostoPolicial': 0},
+            'Itatiba': {'distancia': 64.2, 'custoPedagio': 0.0, 'tempo': 1.28, 'qtdPostoPolicial': 1},
+            'Bragança Paulista': {'distancia': 63.6, 'custoPedagio': 0.0, 'tempo': 1.22, 'qtdPostoPolicial': 1}
         }
     },
     
     'Bragança Paulista' : {
         'vizinhos': {
-            'Serra Negra': {'distancia': 63.6, 'velocidadeMax': 52.13, 'tempo': 1.22, 'qualidadeVia': 7},
-            'Atibaia': {'distancia': 25.3, 'velocidadeMax': 47.73, 'tempo': 0.53, 'qualidadeVia': 8},
-            'Camanducaia': {'distancia': 57.4, 'velocidadeMax': 63.77, 'tempo': 0.9, 'qualidadeVia': 8}
+            'Serra Negra': {'distancia': 63.6, 'custoPedagio': 0.0, 'tempo': 1.22, 'qtdPostoPolicial': 1},
+            'Atibaia': {'distancia': 25.3, 'custoPedagio': 0.0, 'tempo': 0.53, 'qtdPostoPolicial': 0},
+            'Camanducaia': {'distancia': 57.4, 'custoPedagio': 2.80, 'tempo': 0.9, 'qtdPostoPolicial': 2}
         }
     },
     
     'Atibaia' : {
         'vizinhos': {
-            'Itatiba': {'distancia': 37.3, 'velocidadeMax': 62.16, 'tempo': 0.6, 'qualidadeVia': 8},
-            'Bragança Paulista': {'distancia': 25.3, 'velocidadeMax': 47.73, 'tempo': 0.53, 'qualidadeVia': 8},
-            'Jundiai': {'distancia': 61.9, 'velocidadeMax': 103.16, 'tempo': 0.6, 'qualidadeVia': 8},
-            'Guarulhos': {'distancia': 52.9, 'velocidadeMax': 51.86, 'tempo': 1.02, 'qualidadeVia': 8},
-            'São José dos Campos': {'distancia': 90.3, 'velocidadeMax': 78.52, 'tempo': 1.15, 'qualidadeVia': 8}
+            'Itatiba': {'distancia': 37.3, 'custoPedagio': 9.30, 'tempo': 0.6, 'qtdPostoPolicial': 1},
+            'Bragança Paulista': {'distancia': 25.3, 'custoPedagio': 0.0, 'tempo': 0.53, 'qtdPostoPolicial': 0},
+            'Jundiai': {'distancia': 61.9, 'custoPedagio': 9.30, 'tempo': 0.6, 'qtdPostoPolicial': 2},
+            'Guarulhos': {'distancia': 52.9, 'custoPedagio': 0.0, 'tempo': 1.02, 'qtdPostoPolicial': 2},
+            'São José dos Campos': {'distancia': 90.3, 'custoPedagio': 17.59, 'tempo': 1.15, 'qtdPostoPolicial': 3}
         }
     },
     
     'São Paulo' : {
         'vizinhos': {
-            'Jundiai': {'distancia': 58.8, 'velocidadeMax': 61.89, 'tempo': 0.95, 'qualidadeVia': 10},
-            'Guarulhos': {'distancia': 22.0, 'velocidadeMax': 33.33, 'tempo': 0.66, 'qualidadeVia': 10}
+            'Jundiai': {'distancia': 58.8, 'custoPedagio': 11.80, 'tempo': 0.95, 'qualidadeVia': 3},
+            'Guarulhos': {'distancia': 22.0, 'custoPedagio': 0.0, 'tempo': 0.66, 'qualidadeVia': 0}
         }
     },
     
     'Guarulhos' : {
         'vizinhos': {
-            'São Paulo': {'distancia': 22.0, 'velocidadeMax': 33.33, 'tempo': 0.66, 'qualidadeVia': 10},
-            'Atibaia': {'distancia': 52.9, 'velocidadeMax': 51.86, 'tempo': 1.02, 'qualidadeVia': 8},
-            'São José dos Campos': {'distancia': 75.2, 'velocidadeMax': 69.62, 'tempo': 1.08, 'qualidadeVia': 9}
+            'São Paulo': {'distancia': 22.0, 'custoPedagio': 0.0, 'tempo': 0.66, 'qtdPostoPolicial': 0},
+            'Atibaia': {'distancia': 52.9, 'custoPedagio': 0.0, 'tempo': 1.02, 'qtdPostoPolicial': 2},
+            'São José dos Campos': {'distancia': 75.2, 'custoPedagio': 12.35, 'tempo': 1.08, 'qtdPostoPolicial': 6}
         }
     },
     
     'São José dos Campos' : {
         'vizinhos': {
-            'Guarulhos': {'distancia': 75.2, 'velocidadeMax': 69.62, 'tempo': 1.08, 'qualidadeVia': 9},
-            'Atibaia': {'distancia': 90.3, 'velocidadeMax': 78.54, 'tempo': 1.15, 'qualidadeVia': 8},
-            'Taubaté': {'distancia': 42.2, 'velocidadeMax': 64.92, 'tempo': 0.65, 'qualidadeVia': 10},
-            'Paraisópolis': {'distancia': 119.2, 'velocidadeMax': 60.81, 'tempo': 1.96, 'qualidadeVia': 7}
+            'Guarulhos': {'distancia': 75.2, 'custoPedagio': 12.35, 'tempo': 1.08, 'qtdPostoPolicial': 6},
+            'Atibaia': {'distancia': 90.3, 'custoPedagio': 17.59, 'tempo': 1.15, 'qtdPostoPolicial': 3},
+            'Taubaté': {'distancia': 42.2, 'custoPedagio': 0.0, 'tempo': 0.65, 'qtdPostoPolicial': 0},
+            'Paraisópolis': {'distancia': 119.2, 'custoPedagio': 0.0, 'tempo': 1.96, 'qtdPostoPolicial': 0}
         }
     },
     
     'Taubaté' : {
         'vizinhos': {
-            'São José dos Campos': {'distancia': 42.2, 'velocidadeMax': 64.92, 'tempo': 0.65, 'qualidadeVia': 10},
-            'Santo Antônio do Pinhal': {'distancia': 35.4, 'velocidadeMax': 44.25, 'tempo': 0.8, 'qualidadeVia': 7}
+            'São José dos Campos': {'distancia': 42.2, 'custoPedagio': 0.0, 'tempo': 0.65, 'qtdPostoPolicial': 0},
+            'Santo Antônio do Pinhal': {'distancia': 35.4, 'custoPedagio': 0.0, 'tempo': 0.8, 'qtdPostoPolicial': 2}
         }
     },
     
     'Santo Antônio do Pinhal' : {
         'vizinhos': {
-            'Taubaté': {'distancia': 35.4, 'velocidadeMax': 44.25, 'tempo': 0.8, 'qualidadeVia': 7},
-            'Campos do Jordão': {'distancia': 22.2, 'velocidadeMax': 54.14, 'tempo': 0.41, 'qualidadeVia': 7}
+            'Taubaté': {'distancia': 35.4, 'custoPedagio': 0.0, 'tempo': 0.8, 'qtdPostoPolicial': 2},
+            'Campos do Jordão': {'distancia': 22.2, 'custoPedagio': 0.0, 'tempo': 0.41, 'qtdPostoPolicial': 0}
         }
     },
     
     'Campos do Jordão' : {
         'vizinhos': {
-            'Santo Antônio do Pinhal': {'distancia': 16.6, 'velocidadeMax': 38.60, 'tempo': 0.43, 'qualidadeVia': 7},
-            'Paraisópolis': {'distancia': 49.5, 'velocidadeMax': 46.69, 'tempo': 1.06, 'qualidadeVia': 6}
+            'Santo Antônio do Pinhal': {'distancia': 16.6, 'custoPedagio': 0.0, 'tempo': 0.43, 'qtdPostoPolicial': 0},
+            'Paraisópolis': {'distancia': 49.5, 'custoPedagio': 0.0, 'tempo': 1.06, 'qtdPostoPolicial': 0}
         }
     },
     
     'Paraisópolis' : {
         'vizinhos': {
-            'Campos do Jordão': {'distancia': 49.5, 'velocidadeMax': 46.69, 'tempo': 1.06, 'qualidadeVia': 6},
-            'Camanducaia': {'distancia': 60.7, 'velocidadeMax': 48.58, 'tempo': 1.25, 'qualidadeVia': 6},
-            'São José dos Campos': {'distancia': 119.2, 'velocidadeMax': 60.81, 'tempo': 1.96, 'qualidadeVia': 7}
+            'Campos do Jordão': {'distancia': 49.5, 'custoPedagio': 0.0, 'tempo': 1.06, 'qtdPostoPolicial': 0},
+            'Camanducaia': {'distancia': 60.7, 'custoPedagio': 2.90, 'tempo': 1.25, 'qtdPostoPolicial': 0},
+            'São José dos Campos': {'distancia': 119.2, 'custoPedagio': 0.0, 'tempo': 1.96, 'qtdPostoPolicial': 0}
         }
     },
 
     'Camanducaia' : {
         'vizinhos': {
-            'Paraisópolis': {'distancia': 60.7, 'velocidadeMax': 48.56, 'tempo': 1.25, 'qualidadeVia': 6},
-            'Bragança Paulista': {'distancia': 57.4, 'velocidadeMax': 63.77, 'tempo': 0.9, 'qualidadeVia': 8}
+            'Paraisópolis': {'distancia': 60.7, 'custoPedagio': 2.90, 'tempo': 1.25, 'qtdPostoPolicial': 0},
+            'Bragança Paulista': {'distancia': 57.4, 'custoPedagio': 2.80, 'tempo': 0.9, 'qtdPostoPolicial': 2}
         }
     },
 }
-
-
-def buscaRotas(grafo, origem, destino, caminhoAtual=[], caminhos=[]):
-
-    #Essa função está retornando todas as rotas, ainda não conseguimos fazer retornando apenas a mais curta
-    caminhoAtual.append(origem) 
-
-    if origem == destino:
-        caminhos.append(caminhoAtual[:])  
-
-    if origem in grafo:
-        vizinhos = grafo[origem]['vizinhos'] 
-
-        
-        for vizinho in vizinhos:
-            if vizinho not in caminhoAtual:
-                buscaRotas(grafo, vizinho, destino, caminhoAtual, caminhos)
-
-    caminhoAtual.pop()
-
-    caminhos = buscaRotas(grafo, saida, entrega)
-
-    # Imprime todos os caminhos encontrados
-    for caminho in caminhos:
-        print("\n",caminho)
-
-    return caminhos
-
 
 def menorDistancia(grafo, origem, destino):
     distancias = {cidade: float('inf') for cidade in grafo}
@@ -222,7 +194,7 @@ def menorDistancia(grafo, origem, destino):
         caminho.insert(0, cidade)
         cidade = antecessores[cidade]
 
-    print(f"O caminho mais curto entre {origem} e {destino} é:")
+    print(f"\nO caminho mais curto entre {origem} e {destino} é:")
     print("\n\t[  ", end="")
     for cidade in caminho:
         print(cidade, "  ", end="")
@@ -274,29 +246,32 @@ def menorTempo(grafo, origem, destino):
         minutos -= 60
         minutosArred = int(minutos)
 
-    print(f"O caminho com menor tempo de percurso entre {origem} e {destino} é:")
+    print(f"\nO caminho com menor tempo de percurso entre {origem} e {destino} é:")
     print("\n\t[  ", end="")
     for cidade in caminho:
         print(cidade, "  ", end="")
     
-    print("] ",contadorHoras, "h", minutosArred, "min")
+    if(minutos >= 60):
+        print("] ",contadorHoras, "h", minutosArred, "min")
+    else:
+        minutoss = int(minutos)
+        print("] ",contadorHoras, "h", minutoss, "min")
 
-
-def maiorVelocidade(grafo, origem, destino):
-    velocidades = {cidade: -1.0 for cidade in grafo}
-    velocidades[origem] = 0
+def menorCusto(grafo, origem, destino):
+    precos = {cidade: float('inf') for cidade in grafo}
+    precos[origem] = 0
     antecessores = {cidade: None for cidade in grafo}
     visitados = []
-    
+
     while len(visitados) < len(grafo):
         cidadeAtual = None
-        maiorVelocidade = -1.0
-        
-        for cidade, velocidade in velocidades.items():
-            if cidade not in visitados and velocidade > maiorVelocidade:
+        menorPreco = float('inf')
+
+        for cidade, preco in precos.items():
+            if cidade not in visitados and preco < menorPreco:
                 cidadeAtual = cidade
-                maiorVelocidade = velocidade
-                
+                menorPreco = preco
+
         if cidadeAtual == destino:
             break
 
@@ -304,10 +279,10 @@ def maiorVelocidade(grafo, origem, destino):
 
         vizinhos = grafo[cidadeAtual]['vizinhos']
         for vizinho, dados in vizinhos.items():
-            novaVelocidade = velocidades[cidadeAtual] + dados['velocidadeMax']
+            novoPreco = precos[cidadeAtual] + dados['custoPedagio']
 
-            if novaVelocidade > velocidades[vizinho]:
-                velocidades[vizinho] = novaVelocidade
+            if novoPreco < precos[vizinho]:
+                precos[vizinho] = novoPreco
                 antecessores[vizinho] = cidadeAtual
     
     caminho = []
@@ -315,53 +290,73 @@ def maiorVelocidade(grafo, origem, destino):
     while cidade is not None:
         caminho.insert(0, cidade)
         cidade = antecessores[cidade]
-    
-    print(caminho)
 
-    print(f"O caminho com maior velocidade média entre {origem} e {destino} é:")
-    print("\n\t[  ", end="")
-    for cidade in caminho:
-        print(cidade, "  ", end="")
+    if precos[destino] == 0:
+        print("\nO percurso [", end='')
+        for cidade in caminho:
+            print(cidade, "  ", end="")
+        print("] não possui pedágios!")
     
-    print("] ", velocidades[destino], "Km/h")
+    else:
+        print(f"\nO caminho com menor custo entre {origem} e {destino} é:")
+        print("\n\t[  ", end="")
+        for cidade in caminho:
+            print(cidade, "  ", end="")
+        
+        print("] R$ %.2f" % precos[destino])
 
-def qualidadeVia(grafo, origem, destino):
-    qualidades = {cidade:  -1 for cidade in grafo}
-    qualidades[origem] = 0
+def qtdPostoPolicial(grafo, origem, destino):
+    quantidades = {cidade: float('inf') for cidade in grafo}
+    quantidades[origem] = 0
     antecessores = {cidade: None for cidade in grafo}
     visitados = []
 
     while len(visitados) < len(grafo):
         cidadeAtual = None
-        maiorQualidade = -1
+        menorQtd = float('inf')
 
-        for cidade, qualidade in qualidades.items():
-            if qualidade > maiorQualidade and cidade not in visitados:
+        for cidade, quantidade in quantidades.items():
+            if cidade not in visitados and quantidade < menorQtd:
                 cidadeAtual = cidade
-                maiorQualidade = qualidade
+                menorQtd = quantidade
 
         if cidadeAtual == destino:
             break
 
+        visitados.append(cidadeAtual)
+
         vizinhos = grafo[cidadeAtual]['vizinhos']
         for vizinho, dados in vizinhos.items():
-            novaQualidade = qualidades[cidadeAtual] + dados['qualidadeVia']
-            if novaQualidade > qualidades[vizinho]:
-                qualidades[vizinho] = novaQualidade
-                antecessores[vizinho] = cidadeAtual
+            novaQtd = quantidades[cidadeAtual] + dados['qtdPostoPolicial']
 
+            if novaQtd < quantidades[vizinho]:
+                quantidades[vizinho] = novaQtd
+                antecessores[vizinho] = cidadeAtual
+    
     caminho = []
     cidade = destino
     while cidade is not None:
         caminho.insert(0, cidade)
         cidade = antecessores[cidade]
+        
+    if quantidades[destino] == 0:
+        print("\nO percurso [", end='')
+        for cidade in caminho:
+            print(cidade, "  ", end="")
+        print("] não possui posto policial!")
+        
+    else:
 
-    print(f"O caminho com melhor qualidade de via entre {origem} e {destino} é:")
-    print("\n\t[  ", end="")
-    for cidade in caminho:
-        print(cidade, "  ", end="")
-
-    print("] ", qualidades[destino])
+        print(f"\nO caminho com menor quantidade de posto policial entre {origem} e {destino} é:")
+        print("\n\t[  ", end="")
+        for cidade in caminho:
+            print(cidade, "  ", end="")
+        
+        print("] ", quantidades[destino], end='')
+        if quantidades[destino] == 1:
+            print(" posto")
+        elif quantidades[destino] > 1:
+            print(" postos")
 
 
 
@@ -378,14 +373,14 @@ while rotaNaoConfirmada:
     cidadeInexistente = True
     while cidadeInexistente:
         print("\n\nQual a cidade de saída do produto?")
-        print("\n\t1) Limeira \n\t2) Mogi Mirim \n\t3) Paulinia \n\t4) Capivari \n\t5) Jaguariúna \n\t6) Campinas \n\t7) Indaiatuba \n\t8) Jundiai \n\t9) Itatiba \n\t9) Serra Negra \n\t10) Bragança Paulista \n\t11) Atibaia \n\t12) São Paulo \n\t13) Guarulhos \n\t14) São José dos Campos \n\t15) Taubaté \n\t16) Santo Antônio do Pinhal \n\t17) Campos do Jordão \n\t18) Paraisópolis \n\t19) Camanducaia")
+        print("\n\t1) Limeira \n\t2) Mogi Mirim \n\t3) Paulinia \n\t4) Capivari \n\t5) Jaguariúna \n\t6) Campinas \n\t7) Indaiatuba \n\t8) Jundiai \n\t9) Itatiba \n\t10) Serra Negra \n\t11) Bragança Paulista \n\t12) Atibaia \n\t13) São Paulo \n\t14) Guarulhos \n\t15) São José dos Campos \n\t16) Taubaté \n\t17) Santo Antônio do Pinhal \n\t18) Campos do Jordão \n\t19) Paraisópolis \n\t20) Camanducaia \n\t21) Sair do programa")
         
         try:
             saida = int(input("\nCidade de saída: "))
             
         
 
-            if (saida <= 0 or saida > 20):
+            if (saida <= 0 or saida > 21):
                 print("\t\t __________________________________________")
                 print("\n\t\t| ATENÇÃO: Opção inválida. Tente novamente |")
                 print("\t\t __________________________________________")
@@ -438,16 +433,19 @@ while rotaNaoConfirmada:
         saida = "Paraisópolis"
     elif (saida == 20):
         saida = "Camanducaia"
+    elif (saida == 21):
+        print("\n\n\tObrigada por utilizar o programa! Volte sempre :)\n\n")
+        exit()
 
     cidadeInexistente = True
     while cidadeInexistente: 
         print("\n\nQual a cidade de entrega do produto?")
-        print("\n\t1) Limeira \n\t2) Mogi Mirim \n\t3) Paulinia \n\t4) Capivari \n\t5) Jaguariúna \n\t6) Campinas \n\t7) Indaiatuba \n\t8) Jundiai \n\t9) Itatiba \n\t10) Serra Negra \n\t11) Bragança Paulista \n\t12) Atibaia \n\t13) São Paulo \n\t14) Guarulhos \n\t15) São José dos Campos \n\t16) Taubaté \n\t17) Santo Antônio do Pinhal \n\t18) Campos do Jordão \n\t19) Paraisópolis \n\t20) Camanducaia")
+        print("\n\t1) Limeira \n\t2) Mogi Mirim \n\t3) Paulinia \n\t4) Capivari \n\t5) Jaguariúna \n\t6) Campinas \n\t7) Indaiatuba \n\t8) Jundiai \n\t9) Itatiba \n\t10) Serra Negra \n\t11) Bragança Paulista \n\t12) Atibaia \n\t13) São Paulo \n\t14) Guarulhos \n\t15) São José dos Campos \n\t16) Taubaté \n\t17) Santo Antônio do Pinhal \n\t18) Campos do Jordão \n\t19) Paraisópolis \n\t20) Camanducaia \n\t21) Sair do Programa")
 
         try:
             entrega = int(input("\nCidade de entrega: "))
 
-            if (entrega <= 0 or entrega > 20):
+            if (entrega <= 0 or entrega > 21):
                 print("\t\t __________________________________________")
                 print("\n\t\t| ATENÇÃO: Opção inválida. Tente novamente |")
                 print("\t\t __________________________________________")
@@ -500,6 +498,9 @@ while rotaNaoConfirmada:
         entrega = "Paraisópolis"
     elif (entrega== 20):
         entrega = "Camanducaia"
+    elif (entrega == 21):
+        print("\n\n\tObrigada por utilizar o programa! Volte sempre :)\n\n")
+        exit()
 
     if (saida == entrega):
         print("\t\t __________________________________________________________")
@@ -530,31 +531,35 @@ while rotaNaoConfirmada:
 opcaoInvalida = True
 while opcaoInvalida:
     print("\n\nQual regra você deseja utilizar para defirnir a melhor rota? ")
-    print("\n\t1) Menor distância \n\t2) Maior velocidade média \n\t3) Menor tempo \n\t4) Qualidade da via")
+    print("\n\t1) Menor distância \n\t2) Menor custo \n\t3) Menor tempo \n\t4) Menor quantidade de Posto Policial \n\t5) Sair do programa")
 
     try:
         regra = int(input("\nRegra:  "))
 
-        if (regra <= 0 or regra > 4 ):
+        if (regra <= 0 or regra > 5 ):
             print("\t\t __________________________________________")
             print("\n\t\t| ATENÇÃO: Opção inválida. Tente novamente |")
             print("\t\t __________________________________________")
             opcaoInvalida = True
+        elif (regra == 5):
+            print("\n\n\tObrigada por utilizar o programa! Volte sempre :)\n\n")
+            exit()
         else:
             opcaoInvalida = False
 
     except ValueError:
-            print("\t\t ________________________________________")
-            print("\n\t\t| ATENÇÃO: Digite apenas números inteiros |")
-            print("\t\t ________________________________________")
+        print("\t\t ________________________________________")
+        print("\n\t\t| ATENÇÃO: Digite apenas números inteiros |")
+        print("\t\t ________________________________________")
 
 if (regra == 1):
     menorDistancia(grafo, saida, entrega)
+
 elif (regra == 2):
-    maiorVelocidade(grafo, saida, entrega)
+    menorCusto(grafo, saida, entrega)
 elif (regra == 3):
     menorTempo(grafo, saida, entrega)
 elif (regra == 4):
-    qualidadeVia(grafo, saida, entrega)
+    qtdPostoPolicial(grafo, saida, entrega)
 
-
+print("\n\n\n\t\t| BOA VIAGEM !! |\n\n")
