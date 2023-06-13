@@ -579,9 +579,9 @@ while mesmaRegra:
                 mesmaRegra = True
 
             elif (regra2 <= 0 or regra2 > 5 ):
-                print("\t\t __________________________________________")
+                print("\t\t _____________________________________________")
                 print("\n\t\t| ATENÇÃO: Opção inválida. Tente novamente |")
-                print("\t\t __________________________________________")
+                print("\t\t _____________________________________________")
                 opcaoInvalida = True
             elif (regra2 == 5):
                 print("\n\n\tObrigada por utilizar o programa! Volte sempre :)\n\n")
