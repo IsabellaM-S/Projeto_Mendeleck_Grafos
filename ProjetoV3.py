@@ -573,15 +573,15 @@ while mesmaRegra:
             regra2 = int(input("\nRegra:  "))
 
             if (regra2 == regra):
-                print("\t\t _________________________________________________________________")
+                print("\t\t ______________________________________________________________________")
                 print("\n\t\t| ATENÇÃO: Essa regra já foi selecionada anteriormente. Selecione outra|")
-                print("\t\t _________________________________________________________________")
+                print("\t\t ______________________________________________________________________")
                 mesmaRegra = True
 
             elif (regra2 <= 0 or regra2 > 5 ):
-                print("\t\t _____________________________________________")
+                print("\t\t __________________________________________")
                 print("\n\t\t| ATENÇÃO: Opção inválida. Tente novamente |")
-                print("\t\t _____________________________________________")
+                print("\t\t __________________________________________")
                 opcaoInvalida = True
             elif (regra2 == 5):
                 print("\n\n\tObrigada por utilizar o programa! Volte sempre :)\n\n")
