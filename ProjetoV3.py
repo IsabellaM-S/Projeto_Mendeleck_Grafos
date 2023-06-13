@@ -562,30 +562,39 @@ elif (regra == 3):
 elif (regra == 4):
     qtdPostoPolicial(grafo, saida, entrega)
 
+mesmaRegra = True
+while mesmaRegra:
+    opcaoInvalida = True
+    while opcaoInvalida:
+        print("\n\nDigite o segundo parâmetro para definição da melhor rota: ")
+        print("\n\t1) Menor distância \n\t2) Menor custo \n\t3) Menor tempo \n\t4) Menor quantidade de Posto Policial \n\t5) Sair do programa")
 
-opcaoInvalida = True
-while opcaoInvalida:
-    print("\n\nDigite o segundo parâmetro para definição da melhor rota: ")
-    print("\n\t1) Menor distância \n\t2) Menor custo \n\t3) Menor tempo \n\t4) Menor quantidade de Posto Policial \n\t5) Sair do programa")
+        try:
+            regra2 = int(input("\nRegra:  "))
 
-    try:
-        regra2 = int(input("\nRegra:  "))
+            if (regra2 == regra):
+                print("\t\t _________________________________________________________________")
+                print("\n\t\t| ATENÇÃO: Essa regra já foi selecionada anteriormente. Selecione outra|")
+                print("\t\t _________________________________________________________________")
+                mesmaRegra = True
 
-        if (regra <= 0 or regra > 5 ):
-            print("\t\t __________________________________________")
-            print("\n\t\t| ATENÇÃO: Opção inválida. Tente novamente |")
-            print("\t\t __________________________________________")
-            opcaoInvalida = True
-        elif (regra == 5):
-            print("\n\n\tObrigada por utilizar o programa! Volte sempre :)\n\n")
-            exit()
-        else:
-            opcaoInvalida = False
+            elif (regra2 <= 0 or regra2 > 5 ):
+                print("\t\t __________________________________________")
+                print("\n\t\t| ATENÇÃO: Opção inválida. Tente novamente |")
+                print("\t\t __________________________________________")
+                opcaoInvalida = True
+            elif (regra2 == 5):
+                print("\n\n\tObrigada por utilizar o programa! Volte sempre :)\n\n")
+                exit()
+            else:
+                opcaoInvalida = False
+                mesmaRegra = False
+                
 
-    except ValueError:
-        print("\t\t ________________________________________")
-        print("\n\t\t| ATENÇÃO: Digite apenas números inteiros |")
-        print("\t\t ________________________________________")
+        except ValueError:
+            print("\t\t ________________________________________")
+            print("\n\t\t| ATENÇÃO: Digite apenas números inteiros |")
+            print("\t\t ________________________________________")
 
 if (regra2 == 1):
     menorDistancia(grafo, saida, entrega)
